@@ -3,6 +3,7 @@
 # Assume that the list contains numbers.
 # The function shell has been written out on line 30, (def display_larger_than_n_list)
 # and should display all of the numbers in the list that are greater than then number n.
+import random
 
 def main():
     # Declare local variables
@@ -19,11 +20,15 @@ def main():
     # Display the list of numbers that are larger
     # than the number.
     print(f'List of numbers that are larger than {number}:')
-    
+    number_list.remove(number > number_list)
     # Call the display_larger_than_n_list function,
     # passing a number and number list as arguments.
     display_larger_than_n_list(number, number_list)
+    n = input('Number: ')
+    n_list = []    
+    n_list.insert(random.randint())
 
+    return n, n_list
 # The display_larger_than_n_list function accepts two arguments:
 # a list, and a number. The function displays all of the numbers
 # in the list that are greater than the number.
