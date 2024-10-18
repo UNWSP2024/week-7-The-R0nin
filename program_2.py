@@ -7,7 +7,7 @@
 def main():
     # Declare local variables
     number = 5
-    number_list = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     # Display the number.
     print('Number:', number)
@@ -20,15 +20,45 @@ def main():
     # than the number.
     print(f'List of numbers that are larger than {number}:')
     print(number < number_list[0])
+    if number_list[0] == False:
+        number_list.remove(number_list[0])
+
     print(number < number_list[1])
+    if number_list[1] == False:
+        number_list.remove(number_list[1])
+
     print(number < number_list[2])
+    if number_list[2] == False:
+        number_list.remove(number_list[2])
+
     print(number < number_list[3])
+    if number_list[3] == False:
+        number_list.remove(number_list[3])
+
     print(number < number_list[4])
+    if number_list[4] == False:
+        number_list.remove(number_list[4])
+
     print(number < number_list[5])
+    if number_list[5] == False:
+        number_list.remove(number_list[5])
+
     print(number < number_list[6])
+    if number_list[6] == False:
+        number_list.remove(number_list[6])
+
     print(number < number_list[7])
+    if number_list[7] == False:
+        number_list.remove(number_list[7])
+
     print(number < number_list[8])
+    if number_list[8] == False:
+        number_list.remove(number_list[8])
+
     print(number < number_list[9])
+    if number_list[9] == False:
+        number_list.remove(number_list[9])
+
     print(f'{number_list}')
     # Call the display_larger_than_n_list function,
     # passing a number and number list as arguments.
@@ -60,3 +90,4 @@ def display_larger_than_n_list(n, n_list):
 
 if __name__ == '__main__':
     main()
+
