@@ -34,15 +34,8 @@ def main():
     # passing a number and number list as arguments.
 
     display_larger_than_n_list(number, number_list)
-    n = input('Number: ')
+    n = int(input('Number: '))
     n_list = number_list   
-    
-# The display_larger_than_n_list function accepts two arguments:
-# a list, and a number. The function displays all of the numbers
-# in the list that are greater than the number.
-def display_larger_than_n_list(n, n_list):
-    # Write your code to display all of the numbers in the list that are greater than then number n. below
-    print('In display_larger_than_n_list')
     print(n < n_list[0])
     print(n < n_list[1])
     print(n < n_list[2])
@@ -54,8 +47,16 @@ def display_larger_than_n_list(n, n_list):
     print(n < n_list[8])
     print(n < n_list[9])
     print(f'{n_list}')
+
+# The display_larger_than_n_list function accepts two arguments:
+# a list, and a number. The function displays all of the numbers
+# in the list that are greater than the number.
+def display_larger_than_n_list(n, n_list):
+    # Write your code to display all of the numbers in the list that are greater than then number n. below
+    print('In display_larger_than_n_list')
+
+
 # Call the main function.
 
 if __name__ == '__main__':
     main()
-    display_larger_than_n_list()
