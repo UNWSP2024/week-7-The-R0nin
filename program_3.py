@@ -1,28 +1,36 @@
 # Program #3: US_Population
 
 def main():
+    year_list = []
+    s_name = []
+    population = []    
     # Have the user input (using a loop) various information that contains three pieces of data: 
     # year, name of state, and population. 
     choose = True
     while choose == True:
-        
-        print(str(input('State name: ')))
-        print(int(input('population: ')))
-        another = print(int(input('Insert more data(Y/N): ')))
+        year = int(input('year: '))
+        state = str(input('State name: '))
+        pop = int(input('population: '))
+
+        year_list.insert(year)
+        s_name.insert(state)
+        population.insert(pop)
+
+        another = print(input('Insert more data(Y/N): '))
         if another == 'Y':
             choose = True
         if another == 'N':
             choose = False
-        else:
+        else: 
             print('Error, no option chosen')
             choose = False
            
     # Store all of this information in a list of lists.  For example it might be stored like this:
     # [[2010, "Maine", 1987435], [2010,"Minnesota",6873202], [2011, "Iowa", 3421988]]
 
-
+    print(year_list, s_name, population)
     # Now have the user enter a year. 
-    print(int(input('year: ')))
+    
     # The program will add the populations from all states in the list of list for that year only.
     # Pass the list and year to the sum_population_for_year
 
@@ -32,8 +40,8 @@ def sum_population_for_year(all_entered_values, year_to_sum):
     # or 3,421,988 if they enterd 2011 for the year to sum.
     year_to_sum = sum(all_entered_values)
     # print the totalled population
+    
 
-main() 
 # Call the main function.
 #    if __name__ == '__main__':
-        
+main()         
