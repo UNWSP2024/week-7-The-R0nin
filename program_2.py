@@ -22,8 +22,11 @@ def main():
     a = 0
     while a < len(number_list):
         print(number < number_list[a])
-        a += 1
-    
+        if number_list[a] is False:
+            number_list.remove(number_list[a])
+        a = a + 1
+    print(f'{number_list}')
+
     # Call the display_larger_than_n_list function,
     # passing a number and number list as arguments.
 
@@ -33,7 +36,10 @@ def main():
     u = 0
     while u < len(n_list):
         print(n < n_list[u])
-        u += 1
+        if n_list[u] is False:
+            n_list.remove(n_list[u])
+        u = u + 1
+    print(f'{n_list}')
 
 # The display_larger_than_n_list function accepts two arguments:
 # a list, and a number. The function displays all of the numbers
