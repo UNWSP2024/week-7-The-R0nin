@@ -28,16 +28,15 @@ def main():
     # Pass the list and year to the sum_population_for_year
     year_to_sum = sum(population)
 
-    return year_to_sum, all_entered_values
+    return all_entered_values
 
 def sum_population_for_year(all_entered_values, year_to_sum):
     # Loop through and sum the populations for the appropriate year. 
     # e.g. for the list on line 7 the total would be 8,860,637 if the user enterd 2010 for the year to sum,
-    # or 3,421,988 if they enterd 2011 for the year to sum.
-    year_to_sum = sum(all_entered_values)
+    # or 3,421,988 if they enterd 2011 for the year to sum
+
     # print the totalled population
-
-
+    total_population = sum(all_entered_values[2])
 # Call the main function.
 if __name__ == '__main__':
     main()    
