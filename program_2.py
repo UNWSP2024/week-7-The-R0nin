@@ -22,7 +22,7 @@ def main():
     a = 0
     while a < len(number_list):
         print(number < number_list[a])
-        if number_list[a] is False:
+        if number < number_list[a]:
             number_list.remove(number_list[a])
         a = a + 1
     print(f'{number_list}')
@@ -36,7 +36,7 @@ def main():
     u = 0
     while u < len(n_list):
         print(n < n_list[u])
-        if n_list[u] is False:
+        if n < n_list[u]:
             n_list.remove(n_list[u])
         u = u + 1
     print(f'{n_list}')
