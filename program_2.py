@@ -3,11 +3,9 @@
 # Assume that the list contains numbers.
 # The function shell has been written out on line 30, (def display_larger_than_n_list)
 # and should display all of the numbers in the list that are greater than then number n.
-
+number = 5
+number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 def main():
-    # Declare local variables
-    number = 5
-    number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     # Display the number.
     print('Number:', number)
@@ -15,43 +13,15 @@ def main():
     # Display the list of numbers.
     print('List of numbers:')
     print(f'{number_list}')
-    
-    # Display the list of numbers that are larger
-    # than the number.
-    print(f'List of numbers that are larger than {number}:')
-    a = 0
-    while a < len(number_list):
-        print(number < number_list[a])
-        if number < number_list[a]:
-            number_list.remove(a)
-        a = a + 1
-    print(f'{number_list}')
 
-    # Call the display_larger_than_n_list function,
-    # passing a number and number list as arguments.
-
-    display_larger_than_n_list(number, number_list)
-    n = int(input('Number: '))
-    n_list = number_list
-    u = 0
-    while u < len(n_list):
-        print(n < n_list[u])
-        if n < n_list[u]:
-            n_list.remove(u)
-        u = u + 1
-    print(f'{n_list}')
-
-# The display_larger_than_n_list function accepts two arguments:
-# a list, and a number. The function displays all of the numbers
-# in the list that are greater than the number.
-def display_larger_than_n_list(n, n_list):
-    # Write your code to display all of the numbers in the list that are greater than then number n. below
-    print('In display_larger_than_n_list')
-
-
+print(f'List of numbers that are larger than {number}:')
+a = 0
+while a < len(number_list):
+    print(number < number_list[a])
+    if number < number_list[a]:
+        print(number_list[a])
+    a = a + 1
 # Call the main function.
 
 if __name__ == '__main__':
     main()
-
-
